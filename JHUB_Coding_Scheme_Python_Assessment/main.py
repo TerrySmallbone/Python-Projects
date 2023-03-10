@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import os.path
 
 
+#TODO: Tidy up code to avoid silently updating global variables like an amateur.
+
+
 def read_file(selection):
     """Takes user selected file and reads the appropriate file and reads lines to a list"""
     data_set = pandas.read_csv(filepath_or_buffer=selection, header=None)
